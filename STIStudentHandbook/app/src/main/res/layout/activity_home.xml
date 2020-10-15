@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imgSTILogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_logo_round" />
+
+    <ImageButton
+        android:id="@+id/ibtnCalcu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSTILogo"
+        app:srcCompat="@mipmap/ic_calcu" />
+
+    <ImageButton
+        android:id="@+id/ibtnHistory"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="#FFEB3B"
+        android:src="@drawable/ic_history"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtnCalcu"
+        app:layout_constraintStart_toEndOf="@+id/ibtnCalcu"
+        app:layout_constraintTop_toTopOf="@+id/ibtnCalcu" />
+
+    <ImageButton
+        android:id="@+id/ibtnSTIHimn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:background="#FFEB3B"
+        android:src="@drawable/ic_music"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtnHistory"
+        app:layout_constraintStart_toEndOf="@+id/ibtnHistory"
+        app:layout_constraintTop_toTopOf="@+id/ibtnHistory"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
